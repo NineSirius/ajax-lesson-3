@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu";
+    background: #f2f2f2;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+    background: rgb(111, 171, 255);
+    color: #fff;
+}
+
+.travel {
+    display: flex;
+}
+
+.travel-form {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-right: 2px solid #333;
+    padding-right: 10px;
+}
+
+.travel-content {
+    flex-basis: 50%;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.travel-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.travel-title {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+}
+
+.travel-about {
+    display: flex;
+    gap: 15px;
+}
+
+.travel-desc {
+    padding-top: 10px;
+}
+
+.input-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    resize: vertical;
+    border: unset;
+    background: unset;
+    border: unset;
+    color: #fff;
+    outline: none;
+    border-radius: 2px;
+    border-bottom: 2px solid #fff;
+    transition: 0.3s;
+}
+
+.input:focus {
+    background: #fff;
+    color: #333;
+}
+
+.input:focus.input::placeholder {
+    color: #555;
+}
+
+.input::placeholder {
+    color: #f2f2f2;
+}
+
+img {
+    max-width: 30px;
+}
